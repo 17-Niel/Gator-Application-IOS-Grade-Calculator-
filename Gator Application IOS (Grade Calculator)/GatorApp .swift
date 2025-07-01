@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Gator_Application_IOS__Grade_Calculator_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoadingScreen()
         }
+        .modelContainer(for: UserModel.self) //utk konek ke swift data
     }
 }
